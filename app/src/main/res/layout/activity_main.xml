@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/login">
+    android:background="@drawable/log">
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/submt_tn"
         android:text="Login"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,9 +21,10 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="108dp"
+        android:background="@drawable/submt_tn"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button"
@@ -34,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/input_bg"
-        android:ems="10"
+        android:ems="15"
         android:hint="Password"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
@@ -52,8 +54,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
         android:background="@drawable/input_bg"
-        android:ems="10"
-        android:hint="Email"
+        android:ems="15"
+        android:hint="Username"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:paddingTop="10dp"

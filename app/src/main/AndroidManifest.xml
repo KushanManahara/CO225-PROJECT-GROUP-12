@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BitMart">
         <activity
+            android:name=".start"
+            android:exported="false" />
+        <activity
             android:name=".register"
             android:exported="false" />
         <activity
