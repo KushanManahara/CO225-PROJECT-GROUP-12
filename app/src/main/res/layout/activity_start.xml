@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/black"
+    android:background="@drawable/crypt"
     tools:context=".start">
 
     <TextView
@@ -27,14 +27,15 @@
         android:id="@+id/textView4"
         android:layout_width="252dp"
         android:layout_height="50dp"
-        android:layout_marginTop="125dp"
         android:background="@drawable/black_btn"
         android:text="Join to an ongoing bid"
         android:textColor="@color/white"
         android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/textView6"
@@ -45,9 +46,8 @@
         android:text="Start a new bid"
         android:textColor="@color/white"
         android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

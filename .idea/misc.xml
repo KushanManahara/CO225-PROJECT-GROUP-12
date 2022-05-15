@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Feels/4thSem/CO225/project/BitMart/app/src/main/res/layout/activity_main.xml" value="0.28396739130434784" />
+        <entry key="app/src/main/res/drawable/black_btn.xml" value="0.252" />
         <entry key="app/src/main/res/drawable/btn_bg.xml" value="0.252" />
         <entry key="app/src/main/res/drawable/gray_btn.xml" value="0.252" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.252" />
@@ -11,6 +12,7 @@
         <entry key="app/src/main/res/drawable/submt_tn.xml" value="0.252" />
         <entry key="app/src/main/res/drawable/txtview_boarder.xml" value="0.252" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35128205128205126" />
+        <entry key="app/src/main/res/layout/activity_ongoing_bid.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_start.xml" value="0.33" />
       </map>
