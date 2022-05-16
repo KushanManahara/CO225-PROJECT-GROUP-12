@@ -129,6 +129,70 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/black_btn"
                 android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
         </LinearLayout>
     </ScrollView>
 
