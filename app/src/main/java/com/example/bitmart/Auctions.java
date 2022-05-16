@@ -14,23 +14,25 @@ public class Auctions extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_auctions);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setSelectedItemId(R.id.ongoingBid);
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.dashboard:
-                        startActivity(new Intent(getApplicationContext(), DashBoard.class));
+                    case R.id.ongoingBid:
+                        return true;
+
+                    case R.id.scheduledBids:
+                        startActivity(new Intent(getApplicationContext(), OngoingFragment.class));
                         overridePendingTransition(0,0);
                         return true;
-                    case R.id.home:
-                        return true;
-                    case R.id.about:
-                        startActivity(new Intent(getApplicationContext(), About.class));
+
+                    case R.id.newBid:
+                        startActivity(new Intent(getApplicationContext(), StartNewBidFragment.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

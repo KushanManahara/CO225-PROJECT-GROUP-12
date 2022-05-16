@@ -9,9 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BitMart">
         <activity
-            android:name=".ongoingBid"
-            android:exported="false" />
-        <activity
             android:name=".start"
             android:exported="false" />
         <activity

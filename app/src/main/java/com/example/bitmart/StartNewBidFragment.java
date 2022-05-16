@@ -1,18 +1,44 @@
 package com.example.bitmart;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 
-import androidx.fragment.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
-public class StartNewBidFragment extends Fragment {
+public class StartNewBidFragment extends AppCompatActivity {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_start_new_bid, container, false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment_start_new_bid);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setSelectedItemId(R.id.ongoingBid);
+
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.ongoingBid:
+                        startActivity(new Intent(getApplicationContext(), OngoingFragment.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.scheduledBids:
+                        startActivity(new Intent(getApplicationContext(), ScheduledFragment.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.newBid:
+                        return true;
+                }
+                return false;
+            }
+        });
     }
 }
