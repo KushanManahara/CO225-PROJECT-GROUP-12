@@ -6,39 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".ongoingBid"
     android:background="@drawable/login"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <TextView
         android:id="@+id/ongoingbidtxtview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-
         android:text="REGISTER"
         android:textColor="@color/white"
         android:textSize="25dp"
-
+        android:layout_gravity="center_horizontal"
     />
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp">
+        android:layout_marginTop="140dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-
             >
 
             <Button
                 android:id="@+id/crypto1"
-                android:layout_width="match_parent"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/black_btn"
-                android:text="Button" />
+                android:text="Button"/>
 
             <Button
                 android:id="@+id/crypto2"
