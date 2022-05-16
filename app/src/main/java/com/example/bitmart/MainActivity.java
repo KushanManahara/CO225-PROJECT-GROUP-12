@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next = new Intent(MainActivity.this, ongoingBid.class);
+                Intent next = new Intent(MainActivity.this, Auctions.class);
                 startActivity(next);
             }
         });

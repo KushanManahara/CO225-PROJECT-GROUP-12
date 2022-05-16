@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".OngoingFragment"
-    android:background="@drawable/login"
-    >
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Ongoing Bids"-->
-<!--        android:textSize="25dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:id="@+id/ongoingBid"-->
-<!--        />-->
+    android:background="@drawable/login">
+
     <TextView
         android:id="@+id/ongoingbidtxtview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="REGISTER"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="ONGOING BIDS"
         android:textColor="@color/white"
-        android:textSize="25dp"
-        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
         />
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="30dp"
-        >
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/scrollView"
+            android:layout_alignBottom="@+id/bottomNavigation"
+            >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -200,7 +195,17 @@
                 android:text="Button" />
         </LinearLayout>
     </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        />
     />
 
 
-</FrameLayout>
+</RelativeLayout>

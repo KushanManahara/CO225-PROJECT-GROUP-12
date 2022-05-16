@@ -3,6 +3,7 @@ package com.example.bitmart;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -10,34 +11,31 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class Auctions extends AppCompatActivity {
-
-    BottomNavigationView bottomNavigationView;
-    OngoingFragment ongoingFragment = new OngoingFragment();
-    StartNewBidFragment startNewBidFragment = new StartNewBidFragment();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_auctions);
-        bottomNavigationView = findViewById(R.id.nav);
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, ongoingFragment).commit();
+        setContentView(R.layout.activity_main);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.home);
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(MenuItem item) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.ongoingBid:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, ongoingFragment).commit();
+                    case R.id.dashboard:
+                        startActivity(new Intent(getApplicationContext(), DashBoard.class));
+                        overridePendingTransition(0,0);
                         return true;
-
-                    case R.id.newBid:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, startNewBidFragment).commit();
+                    case R.id.home:
+                        return true;
+                    case R.id.about:
+                        startActivity(new Intent(getApplicationContext(), About.class));
+                        overridePendingTransition(0,0);
                         return true;
                 }
-
                 return false;
             }
         });
-
     }
 }

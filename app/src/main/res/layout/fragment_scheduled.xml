@@ -1,17 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentScheduled">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OngoingFragment"
+    android:background="@drawable/login">
 
     <TextView
+        android:id="@+id/ongoingbidtxtview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Scheduled Bids"
-        android:textSize="25dp"
-        android:layout_gravity="center"
-        android:id="@+id/scheduledBids"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="SCHEDULED BIDS"
+        android:textColor="@color/white"
+        android:textSize="25sp"
         />
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/scrollView"
+        android:layout_alignBottom="@+id/bottomNavigation"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/crypto1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button"/>
+
+            <Button
+                android:id="@+id/crypto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/crypto20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_btn"
+                android:text="Button" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+    />
+
+
+</RelativeLayout>
