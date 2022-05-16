@@ -30,8 +30,7 @@ public class ActivityUser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
 
-        Button btnBack, btnSelectCurr, btnPrice;
-        btnBack = findViewById(R.id.btnBack);
+        Button btnSelectCurr, btnPrice;
         btnSelectCurr = findViewById(R.id.btnSelectCurr);
         //btnPrice = findViewById(R.id.btnPrice);
 
@@ -58,14 +57,6 @@ public class ActivityUser extends AppCompatActivity {
 
         SelectedCurr.setText(currName);
         CurrPrice.setText(String.valueOf(BasePrice));
-
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(i);
-            }
-        });
 
     }
 

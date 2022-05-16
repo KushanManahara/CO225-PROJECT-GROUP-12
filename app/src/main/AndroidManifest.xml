@@ -17,14 +17,8 @@
             android:name=".CurrencyList"
             android:exported="false" />
         <activity
-            android:name=".ActivityAdmin"
-            android:exported="false" />
-        <activity
             android:name=".ActivityUser"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
