@@ -23,7 +23,7 @@ import java.net.URL;
 
 public class ActivityUser extends AppCompatActivity {
 
-    double BasePrice =0;
+    double BasePrice = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,6 @@ public class ActivityUser extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
 
         TextView SelectedCurr;
         SelectedCurr = findViewById(R.id.pltxtSelectedCurr);

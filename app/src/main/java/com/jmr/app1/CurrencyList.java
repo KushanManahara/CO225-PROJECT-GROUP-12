@@ -32,42 +32,43 @@ public class CurrencyList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_currency_list);
 
-        /*
         String[] cList = null;
         //reading CSV
-        List <CryptoDetails> cryptoDetailsList= new ArrayList<>();
-        CryptoDetails crypto;
+        ArrayList<String> cSymArrList = new ArrayList<String>();
+        ArrayList<String> cNameArrList = new ArrayList<String>();
 
-        //HashMap<String, String> CurrMap = new HashMap<>();
+
+        int count = 0;
         InputStream path = getResources().openRawResource(R.raw.cryptocurrency);
         BufferedReader bufferedReader = new BufferedReader(
                 new InputStreamReader(path, Charset.forName("UTF-8")));
         String line = "";
         try{
             while((line=bufferedReader.readLine())!=null){
-                String[] tokens = line.split(",");
-
-                CryptoDetails sample = new CryptoDetails();
-                sample.setSymbol(tokens[0]);
-                cList[0] = tokens[0];
-                sample.setName(tokens[1]);
-                sample.setRank(Integer.parseInt(tokens[2]));
-                cryptoDetailsList.add(sample);
+                if(count==0){
+                    count++;
+                    continue;
+                }
+                else {
+                    String[] tokens = line.split(",");
+                    cSymArrList.add(tokens[0]);
+                    cNameArrList.add(tokens[1]);
+                    count++;
+                }
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        */
-        //String[] cList;
 
-        String[] cSymList = new String[] {"BTC","ETH","XRP","BCH","LTC","ADA"};
-        String[] cNameList = new String[] {"Bitcoin","Etherum","Ripple","Bitcoin Cash","Litecoin","Cardano"};
+
+        //String[] cSymList = new String[] {"BTC","ETH","XRP","BCH","LTC","ADA"};
+        //String[] cNameList = new String[] {"Bitcoin","Etherum","Ripple","Bitcoin Cash","Litecoin","Cardano"};
         final Intent cInt = new Intent(this, PriceView.class);
 
 
-        ListAdapter listAdapter = new ArrayAdapter<String>(this, R.layout.single_row, cNameList);
+        ListAdapter listAdapter = new ArrayAdapter<String>(this, R.layout.single_row, cNameArrList);
         listView = findViewById(R.id.cListView);
         listView.setAdapter(listAdapter);
 
@@ -75,8 +76,8 @@ public class CurrencyList extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //String item = String.valueOf(adapterView.getItemAtPosition(i));
-                String item = cSymList[i];
-                String cName = cNameList[i];
+                String item = cSymArrList.get(i);
+                String cName = cNameArrList.get(i);
                 cInt.putExtra("currency",item);
                 cInt.putExtra("currName",cName);
 
