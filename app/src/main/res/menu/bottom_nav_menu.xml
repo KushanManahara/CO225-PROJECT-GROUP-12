@@ -3,10 +3,17 @@
     <item
         android:id="@+id/ongoingBid"
         android:title="Ongoing Bids"
+        android:icon="@drawable/ongoing"
         />
 
     <item
         android:id="@+id/newBid"
         android:title="New Bid"
+        android:icon="@drawable/add"
         />
+
+    <item
+        android:id="@+id/scheduledBids"
+        android:title="Scheduled"
+        android:icon="@drawable/scheduled"/>
 </menu>

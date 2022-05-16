@@ -6,17 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Auctions">
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/container"/>
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/bottom_nav_menu"
-
         app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        android:background="@color/white"
         tools:layout_editor_absoluteX="35dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
