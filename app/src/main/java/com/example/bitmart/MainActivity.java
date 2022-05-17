@@ -18,17 +18,17 @@ public class MainActivity extends AppCompatActivity {
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent register = new Intent(MainActivity.this, On.class);
+                Intent register = new Intent(MainActivity.this, register.class);
                 startActivity(register);
             }
         });
 
-//        loginBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent login = new Intent(MainActivity.this, Ongoing.class);
-//                startActivity(login);
-//            }
-//        });
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent login = new Intent(MainActivity.this, On.class);
+               startActivity(login);
+            }
+        });
     }
 }
