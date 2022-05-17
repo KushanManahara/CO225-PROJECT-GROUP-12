@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,198 +12,69 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="65dp"
         android:text="START A NEW BID"
         android:textColor="@color/white"
         android:textSize="25sp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:id="@+id/scrollView"
-        android:layout_alignBottom="@+id/bottom_navigation"
-        >
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/input_bg"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ongoingbidtxtview" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
 
-            <Button
-                android:id="@+id/crypto1"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button"/>
-
-            <Button
-                android:id="@+id/crypto2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/crypto20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-        </LinearLayout>
-    </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:id="@+id/bottom_navigation"
-        app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"
-        />
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigation" />
 
+    <Button
+        android:id="@+id/regSubmit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/submt_tn"
+        android:text="Start bid"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/submt_tn"
+        android:text="home"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="@+id/regSubmit"
+        app:layout_constraintStart_toStartOf="@+id/regSubmit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

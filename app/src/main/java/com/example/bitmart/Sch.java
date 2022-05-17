@@ -18,7 +18,7 @@ public class Sch extends AppCompatActivity {
         setContentView(R.layout.activity_sch);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.test3);
+        bottomNavigationView.setSelectedItemId(R.id.scheduledBids);
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
