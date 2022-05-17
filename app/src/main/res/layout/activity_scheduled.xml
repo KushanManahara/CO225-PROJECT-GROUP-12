@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Ongoing"
+    tools:context=".OnGoing"
     android:background="@drawable/reg1">
 
     <TextView
@@ -12,200 +12,211 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="100dp"
         android:text="SCHEDULED BIDS"
         android:textColor="@color/white"
         android:textSize="25sp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:id="@+id/scrollView"
-        android:layout_alignBottom="@+id/bottom_navigation"
-        >
+<!--    <ScrollView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="140dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:id="@+id/scrollView"-->
+<!--        android:layout_alignBottom="@+id/home"-->
+<!--        >-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
 
-            <Button
-                android:id="@+id/crypto1"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button"/>
+<!--            <Button-->
+<!--                android:id="@+id/crypto1"-->
+<!--                android:layout_width="350dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button"/>-->
 
-            <Button
-                android:id="@+id/crypto2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto6"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto7"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto8"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto9"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto10"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto11"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto12"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto13"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto14"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto15"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto16"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto17"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto18"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
+<!--            <Button-->
+<!--                android:id="@+id/crypto19"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
 
-            <Button
-                android:id="@+id/crypto20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/black_btn"
-                android:text="Button" />
-        </LinearLayout>
-    </ScrollView>
+<!--            <Button-->
+<!--                android:id="@+id/crypto20"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn"-->
+<!--                android:text="Button" />-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="24dp"
+        android:background="@mipmap/ic_home"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/menu_navigation"
-        android:background="@color/white"
         android:layout_alignParentBottom="true"
-        />
-    />
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigation" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

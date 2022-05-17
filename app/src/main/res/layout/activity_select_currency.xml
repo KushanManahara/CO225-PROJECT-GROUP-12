@@ -10,28 +10,27 @@
 
     <Button
         android:id="@+id/btnSelectCurr"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/select_btn"
         android:text="Select a currency"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.339" />
 
     <Button
         android:id="@+id/btnAddForBid"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/submit_btn"
         android:text="Add for Bidding"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/home"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSelectCurr"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/pltxtSelectedCurr"
@@ -63,12 +62,10 @@
         android:id="@+id/textView7"
         android:layout_width="65dp"
         android:layout_height="13dp"
-        android:text="CryptoCurrency"
         android:textColor="@color/white"
         android:textSize="8dp"
         app:layout_constraintBottom_toTopOf="@+id/pltxtSelectedCurr"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.967" />
@@ -77,12 +74,10 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Base Price (in USD)"
         android:textColor="@color/white"
         android:textSize="8dp"
         app:layout_constraintBottom_toTopOf="@+id/pltxtPrice"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.934" />
@@ -91,11 +86,11 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Crypto for ongoing auction"
+        android:text="Select Crypto for Ongoing Auction"
+        android:textSize="20dp"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btnSelectCurr"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.492" />
@@ -104,12 +99,32 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:layout_marginBottom="32dp"
         android:text="Are you sure you want to Add this for Bidding?"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddForBid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.779" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="32dp"
+        android:background="@mipmap/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="32dp"
+        android:background="@mipmap/ic_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

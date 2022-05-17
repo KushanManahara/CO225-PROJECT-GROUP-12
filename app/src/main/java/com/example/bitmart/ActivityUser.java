@@ -15,11 +15,13 @@ public class ActivityUser extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
+        setContentView(R.layout.activity_select_currency);
 
-        Button btnSelectCurr, btnAdd;
-        btnSelectCurr = findViewById(R.id.btnSelectCurr);
-        btnAdd = findViewById(R.id.btnAddForBid);
+
+        Button btnSelectCurr = findViewById(R.id.btnSelectCurr);
+        Button btnAdd = findViewById(R.id.btnAddForBid);
+        Button home = findViewById(R.id.home);
+        Button back = findViewById(R.id.back);
 
         btnSelectCurr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,7 +34,23 @@ public class ActivityUser extends AppCompatActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),On.class));
+                startActivity(new Intent(getApplicationContext(), OnGoing.class));
+            }
+        });
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent register = new Intent(ActivityUser.this, MainActivity.class);
+                startActivity(register);
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent register = new Intent(ActivityUser.this, OnGoing.class);
+                startActivity(register);
             }
         });
 
