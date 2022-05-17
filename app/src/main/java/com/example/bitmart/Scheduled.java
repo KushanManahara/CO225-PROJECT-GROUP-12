@@ -8,14 +8,12 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class Auctions extends AppCompatActivity {
+public class Scheduled extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_auctions);
-//        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_scheduled);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.ongoingBid);
@@ -24,14 +22,16 @@ public class Auctions extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.newBid:
-                        startActivity(new Intent(getApplicationContext(), StartNewBid.class));
+                    case R.id.ongoingBid:
+                        startActivity(new Intent(getApplicationContext(), Ongoing.class));
                         overridePendingTransition(0,0);
                         return true;
-                    case R.id.ongoingBid:
-                        return true;
+
                     case R.id.scheduledBids:
-                        startActivity(new Intent(getApplicationContext(), Scheduled.class));
+                        return true;
+
+                    case R.id.newBid:
+                        startActivity(new Intent(getApplicationContext(), StartNewBid.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

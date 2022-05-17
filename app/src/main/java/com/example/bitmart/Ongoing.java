@@ -8,12 +8,12 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class Auctions extends AppCompatActivity {
+public class Ongoing extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_auctions);
+        setContentView(R.layout.activity_ongoing);
 //        setContentView(R.layout.activity_main);
 
 

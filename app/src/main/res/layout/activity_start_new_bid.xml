@@ -164,16 +164,16 @@
         android:background="@drawable/submt_tn"
         android:text="Start New Bid"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName8"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName8" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/bottom_nav_menu"
+        app:menu="@menu/menu_navigation"
         android:background="@color/white"
         android:layout_alignParentBottom="true"
         />

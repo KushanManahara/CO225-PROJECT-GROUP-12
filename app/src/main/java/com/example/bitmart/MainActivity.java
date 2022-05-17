@@ -12,14 +12,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button move = findViewById(R.id.registerBtn);
+        Button registerBtn = findViewById(R.id.registerBtn);
+        Button loginBtn = findViewById(R.id.loginBtn);
 
-        move.setOnClickListener(new View.OnClickListener() {
+        registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next = new Intent(MainActivity.this, Auctions.class);
-                startActivity(next);
+                Intent register = new Intent(MainActivity.this, On.class);
+                startActivity(register);
             }
         });
+
+//        loginBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent login = new Intent(MainActivity.this, Ongoing.class);
+//                startActivity(login);
+//            }
+//        });
     }
 }

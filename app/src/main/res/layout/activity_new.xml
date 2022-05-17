@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".OngoingFragment"
-    android:background="@drawable/login">
+    tools:context=".On"
+    android:background="@drawable/reg1">
 
     <TextView
         android:id="@+id/ongoingbidtxtview"
@@ -13,20 +13,20 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:text="ONGOING BIDS"
+        android:text="START A NEW BID"
         android:textColor="@color/white"
         android:textSize="25sp"
         />
 
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="140dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp"
-            android:id="@+id/scrollView"
-            android:layout_alignBottom="@+id/bottomNavigation"
-            >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/scrollView"
+        android:layout_alignBottom="@+id/bottom_navigation"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -197,15 +197,13 @@
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/bottom_nav_menu"
         android:background="@color/white"
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"
         />
-    />
 
 
 </RelativeLayout>

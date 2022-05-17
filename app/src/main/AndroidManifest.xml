@@ -9,7 +9,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BitMart">
         <activity
-            android:name=".start"
+            android:name=".Sch"
+            android:exported="false" />
+        <activity
+            android:name=".New"
+            android:exported="false" />
+        <activity
+            android:name=".On"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduledBids"
             android:exported="false" />
         <activity
             android:name=".register"
