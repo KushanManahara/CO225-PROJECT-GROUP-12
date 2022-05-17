@@ -29,10 +29,10 @@ public class Sch extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
 
-                    case R.id.newBid:
-                        startActivity(new Intent(getApplicationContext(), New.class));
-                        overridePendingTransition(0,0);
-                        return true;
+//                    case R.id.newBid:
+//                        startActivity(new Intent(getApplicationContext(), New.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
 
                     case R.id.scheduledBids:
                         return true;

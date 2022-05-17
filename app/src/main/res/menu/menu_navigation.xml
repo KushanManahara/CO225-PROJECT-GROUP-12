@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/ongoingBid"
-        android:title="Ongoing Bids"
+        android:title="Ongoing Auctions"
         android:icon="@drawable/ongoing"
         />
 
-    <item
-        android:id="@+id/newBid"
-        android:title="New Bid"
-        android:icon="@drawable/add"
-        />
+<!--    <item-->
+<!--        android:id="@+id/newBid"-->
+<!--        android:title="New Bid"-->
+<!--        android:icon="@drawable/add"-->
+<!--        />-->
 
     <item
         android:id="@+id/scheduledBids"

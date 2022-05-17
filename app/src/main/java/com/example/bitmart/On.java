@@ -27,10 +27,10 @@ public class On extends AppCompatActivity {
                     case R.id.ongoingBid:
                         return true;
 
-                    case R.id.newBid:
-                        startActivity(new Intent(getApplicationContext(), New.class));
-                        overridePendingTransition(0,0);
-                        return true;
+//                    case R.id.newBid:
+//                        startActivity(new Intent(getApplicationContext(), New.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
 
                     case R.id.scheduledBids:
                         startActivity(new Intent(getApplicationContext(), Sch.class));

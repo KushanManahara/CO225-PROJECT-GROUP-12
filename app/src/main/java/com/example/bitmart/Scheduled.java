@@ -30,10 +30,10 @@ public class Scheduled extends AppCompatActivity {
                     case R.id.scheduledBids:
                         return true;
 
-                    case R.id.newBid:
-                        startActivity(new Intent(getApplicationContext(), StartNewBid.class));
-                        overridePendingTransition(0,0);
-                        return true;
+//                    case R.id.newBid:
+//                        startActivity(new Intent(getApplicationContext(), StartNewBid.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
                 }
                 return false;
             }

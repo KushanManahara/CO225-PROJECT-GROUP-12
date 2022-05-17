@@ -24,10 +24,10 @@ public class Ongoing extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.newBid:
-                        startActivity(new Intent(getApplicationContext(), StartNewBid.class));
-                        overridePendingTransition(0,0);
-                        return true;
+//                    case R.id.newBid:
+//                        startActivity(new Intent(getApplicationContext(), StartNewBid.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
                     case R.id.ongoingBid:
                         return true;
                     case R.id.scheduledBids:
