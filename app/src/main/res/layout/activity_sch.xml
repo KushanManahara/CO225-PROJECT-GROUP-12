@@ -25,7 +25,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:id="@+id/scrollView"
-        android:layout_alignBottom="@+id/bottom_navigation"
+        android:layout_alignBottom="@+id/home"
         >
 
         <LinearLayout
@@ -195,6 +195,18 @@
                 android:text="Button" />
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/submt_tn"
+        android:text="home"
+        android:textColor="@color/black"
+        android:layout_alignBottom="@+id/bottom_navigation"
+        android:layout_centerHorizontal="true"
+        />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
