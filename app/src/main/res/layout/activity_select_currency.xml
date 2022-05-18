@@ -13,7 +13,7 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:background="@drawable/select_btn"
-        android:text="Select a currency"
+        android:text="Select new currency"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.697" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textViewBasePrice"
         android:layout_width="65dp"
         android:layout_height="13dp"
         android:textColor="@color/white"

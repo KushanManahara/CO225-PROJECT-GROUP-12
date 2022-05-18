@@ -12,9 +12,10 @@ import retrofit2.http.POST;
 
 public interface ConnectAPI {
 
-    @GET("/auctions/get-all")
-    Call<List<Auction>> getAllAuctions();
+    @GET("/auctions/get-on-going")
+    Call<Auction> getAllAuctions();
 
     @POST("/login")
     Call<AuthenticationAccept> login(@Body AuthenticationRequest authenticationRequest);
+
 }

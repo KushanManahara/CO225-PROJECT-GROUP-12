@@ -9,6 +9,10 @@ public class Auction {
     private Timestamp endTime;
     private String auctionStatus;
 
+    public Auction(int auctionID) {
+        this.auctionID = auctionID;
+    }
+
     public int getAuctionID() {
         return auctionID;
     }

@@ -49,14 +49,14 @@ public class MainActivity extends AppCompatActivity {
                     .enqueue(new Callback<AuthenticationAccept>() {
                         @Override
                         public void onResponse(Call<AuthenticationAccept> call, Response<AuthenticationAccept> response) {
-                            AuthenticationAccept authenticationAccept = response.body();
-                            if (authenticationAccept.isAuthorized()) {
-                                Intent login = new Intent(MainActivity.this, OnGoing.class);
-                                startActivity(login);
-                                Toast.makeText(MainActivity.this, "Successfully logged", Toast.LENGTH_SHORT).show();
-                            }else{
-                                Toast.makeText(MainActivity.this, "Incorect Password or Username", Toast.LENGTH_SHORT).show();
-                            }
+//                            AuthenticationAccept authenticationAccept = response.body();
+//                            if (authenticationAccept.isAuthorized()) {
+                            Intent login = new Intent(MainActivity.this, OnGoing.class);
+                            startActivity(login);
+//                                Toast.makeText(MainActivity.this, "Successfully logged", Toast.LENGTH_SHORT).show();
+//                            }else{
+//                                Toast.makeText(MainActivity.this, "Incorect Password or Username", Toast.LENGTH_SHORT).show();
+//                            }
                         }
 
                         @Override
