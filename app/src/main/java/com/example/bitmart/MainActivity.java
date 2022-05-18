@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button registerBtn = findViewById(R.id.registerBtn);
         Button loginBtn = findViewById(R.id.loginBtn);
+        Button adminBtn = findViewById(R.id.loginAdmin);
 
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,7 +28,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent login = new Intent(MainActivity.this, OnGoing.class);
-               startActivity(login);
+                startActivity(login);
+            }
+        });
+
+        adminBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent login = new Intent(MainActivity.this, AdminLogin.class);
+                startActivity(login);
             }
         });
     }

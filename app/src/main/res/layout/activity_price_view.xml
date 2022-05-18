@@ -46,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/newAuction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Base Price (in USD)"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:textSize="35dp"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/newAuction"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"

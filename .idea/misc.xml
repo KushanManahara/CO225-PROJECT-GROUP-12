@@ -32,9 +32,13 @@
         <entry key="app/src/main/res/drawable/submt_tn.xml" value="0.252" />
         <entry key="app/src/main/res/drawable/txtview_boarder.xml" value="0.252" />
         <entry key="app/src/main/res/layout/activity_2.xml" value="0.3567708333333333" />
+        <entry key="app/src/main/res/layout/activity_admin_login.xml" value="0.3567708333333333" />
+        <entry key="app/src/main/res/layout/activity_admin_page.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_admin_start_new_auction.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_admin_stop_auction.xml" value="0.3567708333333333" />
         <entry key="app/src/main/res/layout/activity_auctions.xml" value="0.3567708333333333" />
         <entry key="app/src/main/res/layout/activity_currency_list.xml" value="0.3567708333333333" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35128205128205126" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_new.xml" value="0.3567708333333333" />
         <entry key="app/src/main/res/layout/activity_new_bid.xml" value="0.3411458333333333" />
         <entry key="app/src/main/res/layout/activity_on.xml" value="0.3567708333333333" />

@@ -11,6 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BitMart">
         <activity
+            android:name=".AdminStopAuction"
+            android:exported="false" />
+        <activity
+            android:name=".AdminStartNewAuction"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
             android:name=".Scheduled"
             android:exported="false" />
         <activity
