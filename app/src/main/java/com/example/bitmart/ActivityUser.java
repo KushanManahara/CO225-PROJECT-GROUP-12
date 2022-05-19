@@ -14,6 +14,10 @@ public class ActivityUser extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        Intent ActivityUser = getIntent();
+        String id = ActivityUser.getStringExtra("userID");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_currency);
 
@@ -26,7 +30,8 @@ public class ActivityUser extends AppCompatActivity {
         btnSelectCurr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),CurrencyList.class);
+                Intent i = new Intent(getApplicationContext(), CurrencyList.class);
+                i.putExtra("userID", id);
                 startActivity(i);
             }
         });
@@ -53,23 +58,6 @@ public class ActivityUser extends AppCompatActivity {
                 startActivity(register);
             }
         });
-
-        TextView SelectedCurr;
-        SelectedCurr = findViewById(R.id.pltxtSelectedCurr);
-
-        TextView CurrPrice;
-        CurrPrice = findViewById(R.id.pltxtPrice);
-
-        Intent cInt = getIntent();
-        String currName = cInt.getStringExtra("NextCurrName");
-        String currency = cInt.getStringExtra("NextCurrency");
-        BasePrice = cInt.getDoubleExtra("NextPrice",0);
-
-        //BasePrice = Double.parseDouble(price);
-
-        SelectedCurr.setText(currName);
-        CurrPrice.setText(String.valueOf(BasePrice));
-
     }
 
 }

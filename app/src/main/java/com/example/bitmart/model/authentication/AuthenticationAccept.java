@@ -1,15 +1,15 @@
 package com.example.bitmart.model.authentication;
 
 public class AuthenticationAccept {
-    private int USERID;
+    private int userID;
     private boolean authorized;
 
-    public int getUSERID() {
-        return USERID;
+    public int getUserID() {
+        return userID;
     }
 
-    public void setUSERID(int USERID) {
-        this.USERID = USERID;
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 
     public boolean isAuthorized() {

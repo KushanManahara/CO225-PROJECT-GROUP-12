@@ -46,17 +46,46 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/newAuction"
+        android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Base Price (in USD)"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <TextView
+        android:id="@+id/newAuction3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initial Bid Amount ($)"
         android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintVertical_bias="0.377" />
+
+    <TextView
+        android:id="@+id/newAuction2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Bid Amount ($)"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
 
     <TextView
         android:id="@+id/txtCurrName"
@@ -71,16 +100,31 @@
         app:layout_constraintVertical_bias="0.102" />
 
     <TextView
-        android:id="@+id/txtPrice"
+        android:id="@+id/initPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="35dp"
         android:textColor="@color/white"
+        android:textSize="35dp"
         app:layout_constraintBottom_toTopOf="@+id/btnAddToBid"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCurrName"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintVertical_bias="0.339" />
+
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_width="187dp"
+        android:layout_height="63dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddToBid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCurrName"
+        app:layout_constraintVertical_bias="0.735" />
 
     <Button
         android:id="@+id/back"

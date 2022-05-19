@@ -10,7 +10,6 @@ public class User{
     private String password;
     private int bidCount;
     private int accBalance;
-    private Timestamp LastLoginTIme;
 
     //Getters
     public int getUserId() {
@@ -37,10 +36,6 @@ public class User{
         return accBalance;
     }
 
-    public Timestamp getLastLoginTIme() {
-        return LastLoginTIme;
-    }
-
     //Setters
     public void setUserId(int userId) {
         this.userId = userId;
@@ -64,9 +59,5 @@ public class User{
 
     public void setAccBalance(int accBalance) {
         this.accBalance = accBalance;
-    }
-
-    public void setLastLoginTIme(Timestamp lastLoginTIme) {
-        LastLoginTIme = lastLoginTIme;
     }
 }

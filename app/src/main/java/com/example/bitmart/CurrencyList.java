@@ -7,8 +7,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.bitmart.model.initialvalue.InitialValue;
+import com.example.bitmart.retrofitservice.ConnectAPI;
+import com.example.bitmart.retrofitservice.RetrofitService;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -18,6 +24,10 @@ import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 
 public class CurrencyList extends AppCompatActivity {
 
@@ -26,6 +36,10 @@ public class CurrencyList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        Intent currencyList = getIntent();
+        String id = currencyList.getStringExtra("userID");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_currency_list);
 
@@ -60,8 +74,6 @@ public class CurrencyList extends AppCompatActivity {
         }
 
 
-        //String[] cSymList = new String[] {"BTC","ETH","XRP","BCH","LTC","ADA"};
-        //String[] cNameList = new String[] {"Bitcoin","Etherum","Ripple","Bitcoin Cash","Litecoin","Cardano"};
         final Intent cInt = new Intent(this, PriceView.class);
 
 
@@ -72,11 +84,11 @@ public class CurrencyList extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //String item = String.valueOf(adapterView.getItemAtPosition(i));
                 String item = cSymArrList.get(i);
                 String cName = cNameArrList.get(i);
                 cInt.putExtra("currency",item);
                 cInt.putExtra("currName",cName);
+                cInt.putExtra("userID", id);
 
                 startActivity(cInt);
             }

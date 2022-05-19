@@ -23,186 +23,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-<!--    <ScrollView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="140dp"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginBottom="30dp"-->
-<!--        android:id="@+id/scrollView"-->
-<!--        android:layout_alignBottom="@+id/bottom_navigation"-->
-<!--        >-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="vertical"-->
-<!--            >-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto1"-->
-<!--                android:layout_width="350dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button"/>-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto2"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto3"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto4"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto5"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto6"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto7"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto8"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto9"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto10"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto11"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto12"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto13"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto14"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto15"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto16"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto17"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto18"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto19"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/crypto20"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@drawable/black_btn"-->
-<!--                android:text="Button" />-->
-<!--        </LinearLayout>-->
-<!--    </ScrollView>-->
-
-
-
     <TextView
         android:id="@+id/startTimeView"
         android:layout_width="wrap_content"
@@ -215,7 +35,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ongoingbidtxtview" />
 
-    <EditText
+    <TextView
         android:id="@+id/startTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -224,7 +44,7 @@
         android:inputType="time"
         android:text="12.55 pm"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/teal_200"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -243,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startTime" />
 
-    <EditText
+    <TextView
         android:id="@+id/endTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -252,7 +72,7 @@
         android:inputType="time"
         android:text="06.55 pm"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/teal_200"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -291,12 +111,5 @@
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menu_navigation" />
-
-    <!--    <TextView-->
-<!--        android:id="@+id/textView3"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="TextView" />-->
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

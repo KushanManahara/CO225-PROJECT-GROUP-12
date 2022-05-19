@@ -1,26 +1,23 @@
 package com.example.bitmart;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.example.bitmart.model.authentication.AuthenticationAccept;
 import com.example.bitmart.model.authentication.AuthenticationRequest;
 import com.example.bitmart.retrofitservice.ConnectAPI;
 import com.example.bitmart.retrofitservice.RetrofitService;
-import com.google.android.material.textfield.TextInputEditText;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,19 +45,27 @@ public class MainActivity extends AppCompatActivity {
             connectAPI.login(authenticationRequest)
                     .enqueue(new Callback<AuthenticationAccept>() {
                         @Override
-                        public void onResponse(Call<AuthenticationAccept> call, Response<AuthenticationAccept> response) {
-//                            AuthenticationAccept authenticationAccept = response.body();
-//                            if (authenticationAccept.isAuthorized()) {
-                            Intent login = new Intent(MainActivity.this, OnGoing.class);
-                            startActivity(login);
-//                                Toast.makeText(MainActivity.this, "Successfully logged", Toast.LENGTH_SHORT).show();
-//                            }else{
-//                                Toast.makeText(MainActivity.this, "Incorect Password or Username", Toast.LENGTH_SHORT).show();
-//                            }
+                        public void onResponse(@NonNull Call<AuthenticationAccept> call, @NonNull Response<AuthenticationAccept> response) {
+                            AuthenticationAccept authenticationAccept = response.body();
+                            assert authenticationAccept != null;
+                            if (authenticationAccept.isAuthorized()) {
+
+                                Intent OnGoing = new Intent(MainActivity.this, OnGoing.class);
+                                assert response.body() != null;
+
+                                String id = String.valueOf(authenticationAccept.getUserID());
+
+                                OnGoing.putExtra("id", id);
+                                startActivity(OnGoing);
+
+                                Toast.makeText(MainActivity.this, "Sucessfully logged", Toast.LENGTH_SHORT).show();
+                            }else{
+                                Toast.makeText(MainActivity.this, "Incorrect Password or Username", Toast.LENGTH_SHORT).show();
+                            }
                         }
 
                         @Override
-                        public void onFailure(Call<AuthenticationAccept> call, Throwable t) {
+                        public void onFailure(@NonNull Call<AuthenticationAccept> call, @NonNull Throwable t) {
                             Toast.makeText(MainActivity.this, "unable to log",Toast.LENGTH_SHORT).show();
                         }
                     });

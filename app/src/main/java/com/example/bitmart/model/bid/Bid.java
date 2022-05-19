@@ -1,21 +1,43 @@
 package com.example.bitmart.model.bid;
 
+import java.sql.Timestamp;
+
 public class Bid {
 
     private int bidID;
     private int userID;
-    private int currencyID;
-    private int amount;
-    private String biddingTime;
+    private String symbol;
+    private double amount;
 
-    @Override
-    public String toString() {
-        return "BId{" +
-                "bidID=" + bidID +
-                ", userID=" + userID +
-                ", currencyID=" + currencyID +
-                ", amount=" + amount +
-                ", biddingTime='" + biddingTime + '\'' +
-                '}';
+    public int getBidID() {
+        return bidID;
+    }
+
+    public void setBidID(int bidID) {
+        this.bidID = bidID;
+    }
+
+    public int getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
+    }
+
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
     }
 }
