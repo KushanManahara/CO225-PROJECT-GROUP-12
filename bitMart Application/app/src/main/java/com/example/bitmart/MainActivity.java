@@ -33,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
         RetrofitService retrofitService = new RetrofitService();
         ConnectAPI connectAPI = retrofitService.getRetrofit().create(ConnectAPI.class);
 
+        adminBtn.setOnClickListener(view->{
+            Intent admin = new Intent(MainActivity.this, AdminLogin.class);
+            startActivity(admin);
+        });
+
+        registerBtn.setOnClickListener(view->{
+            Intent registration = new Intent(MainActivity.this, register.class);
+            startActivity(registration);
+        });
+
         loginBtn.setOnClickListener(view-> {
             String email = String.valueOf(inputEditTextEmail.getText());
             String password = String.valueOf(inputEditTextPassword.getText());
