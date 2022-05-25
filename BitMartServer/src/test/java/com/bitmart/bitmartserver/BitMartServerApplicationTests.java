@@ -16,8 +16,12 @@ import java.sql.Timestamp;
 @SpringBootTest
 class BitMartServerApplicationTests {
 
-//	@Test
+	@Test
 	void contextLoads() {
+		addUserTest();
+		auctionTest();
+		initTest();
+		bidTest();
 	}
 
 	@Autowired
@@ -29,7 +33,9 @@ class BitMartServerApplicationTests {
 	@Autowired
 	BidDao bidDao;
 
-	@Test
+	@Autowired
+	AuctionDao auctionDao;
+
 	void addUserTest() {
 		User user = new User();
 
@@ -41,11 +47,6 @@ class BitMartServerApplicationTests {
 
 		userDao.save(user);
 	}
-
-	@Autowired
-	AuctionDao auctionDao;
-
-	@Test
 	void auctionTest(){
 		Auction auction = new Auction();
 
@@ -58,7 +59,6 @@ class BitMartServerApplicationTests {
 		auctionDao.save(auction);
 	}
 
-	@Test
 	void initTest(){
 		InitialValue initialValue = new InitialValue();
 
@@ -68,7 +68,6 @@ class BitMartServerApplicationTests {
 		initialValueDao.save(initialValue);
 	}
 
-	@Test
 	void bidTest(){
 		Bid bid = new Bid();
 
